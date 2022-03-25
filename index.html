@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- Dont Roast my Code -->
+    <main id="main">
+
+        <header id="header">
+            <h1 id="title">Free Code Camp Survey</h1>
+            <p id="description">Thank you for taking the time to help us improve the platform!</p>
+        </header>
+        
+        <form action="" id="survey-form">
+          
+            <div class="form-group form-name">
+                <label for="firstname" id="name-label">
+                    <h3>First Name</h3>
+                    <input type="text" name="name" id="name" placeholder="Enter First Name" required>
+                </label>
+
+                <label for="lastname" id="name-label">
+                    <h3>Last Name</h3>
+                    <input type="text" name="lastname" id="lastname" placeholder="Enter Last name" required>
+                </label>
+            </div>
+    
+            <div class="form-group">
+                <label for="email" id="email-label">
+                    <h3>Email   <i class='bx bx-envelope' ></i></h3>
+                    <input type="email" name="email" id="email" placeholder="Enter email" required>
+                </label>
+            </div>
+    
+            <div class="form-group age-section">
+                <label for="age" class="age-label">
+                    <h3 class="age-title">Age</h3>
+
+                    <div class="age-detials">
+                        <input type="number" name="number" id="number" class="age" min="0" max="999999" value="0" placeholder="enter your age" readonly  required>
+                        
+                        <div class="age-btn-container">
+                            <button class="age-btn-up"><i class='bx bx-up-arrow-alt'></i></button>
+                            <button class="age-btn-down"><i class='bx bx-down-arrow-alt' ></i></button>
+                        </div>
+                    </div>
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label for="phone" id="number">
+                    <h2>Phone</h2> 
+                     <i class='bx bxs-phone'></i> <span class="phone-number">09<span class="phone-value">- --- ---</span></span>
+                       
+                    <input type="range" name="phone" id="phone" class="phone"min="0" max="99999999" value="0">
+                </label>
+            </div>
+    
+        <div class="form-group">
+            <h3>Birth day <i class='bx bx-cake' ></i></h3>
+            <div class="dates">
+                <span class="month">
+                    <h4 class="month-display">January</h4>
+                    <button class="month-btn">Month</button>
+                </span>
+
+                <span>
+                    <h4 class="day-display">1</h4>
+                    <button class="day-btn">Day</button>
+                </span>
+
+                <span>
+                    <h4 class="year-display">2001</h4>
+                    <button class="year-btn">Year</button>
+                </span>
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            <h2>Would you recommend freeCodeCamp to a friend?</h2>
+            <div class="buttons">
+              <label for="definitely">
+                  <input type="radio" name="recommendation" value="definitely"> <span>Definitely</span>
+              </label>
+
+              <label for="Maybe">
+                <input type="radio" name="recommendation" value="Maybe"> <span>Maybe</span>
+            </label>
+
+            <label for="Not sure">
+                <input type="radio" name="recommendation" value="Not sure"> <span>Not sure</span>
+            </label>
+            </div>
+        </div>
+            
+        <div class="form-group favorite-select">
+            <h2>What is your favorite feature of freeCodeCamp?</h2>
+                <select>
+                    <option value="Challenges" id="dropdown">Challenges</option>
+                    <option value="Free Tutorial" id="dropdown">Free Tutorial</option>
+                    <option value="Easy to Learn" id="dropdown">Easy to Learn</option>
+                    <option value="Quincy Larson" id="dropdown">Quincy Larson</option>
+                    <option value="Criztiandev" id="dropdown">Criztiandev</option>
+                </select>
+            </div>
+        </div>
+
+
+            <div class="form-group">
+                <h2>What would you like to see improved? (Check all that apply)</h2>
+                <div class="checkboxes">
+                   <label>
+                        <input type="checkbox" name="Front End Project" value="working"> <span>Front End Project</span>
+                   </label>
+                   <label class="check-box-label">
+                       <input type="checkbox" name="Backend Project" value="working"> <span>Backend Project</span>
+                   </label> 
+                    <label class="check-box-label">
+                        <input type="checkbox" name="Procastination" value="working"> <span>Front End Project</span>
+                    </label>
+                    <label class="check-box-label">
+                        <input type="checkbox" name="Depression" value="working"> <span>Depression</span>
+                    </label>
+                    <label class="check-box-label">
+                        <input type="checkbox" name="Anxiety" value="working"> <span>Anxiety</span>
+                    </label>
+                    <label class="check-box-label">
+                        <input type="checkbox" name="Drugs" value="working"> <span>Drugs</span>
+                    </label>
+                    <label class="check-box-label">
+                        <input type="checkbox" name="AWS" value="working"> <span>AWS</span>
+                    </label>
+                    <label class="check-box-label">
+                        <input type="checkbox" name="React Js" value="working"> <span>React Js</span>
+                    </label>
+                    <label class="check-box-label">
+                        <input type="checkbox" name="Hook up Girls" value="working"> <span>Hook up Girls</span>
+                    </label>
+                    <label class="check-box-label">
+                        <input type="checkbox" name="Sleep Forever" id="" value="working"> <span>Sleep Forever</span>
+                    </label>
+                    <label class="check-box-label">
+                        <input type="checkbox" name="Eating Insect" value="working"> <span>Eating Insect</span>
+                    </label>
+                    <label class="check-box-label">
+                        <input type="checkbox" name="208 Billion" value="working"> <span>208 Billion</span>
+                    </label>
+                    <label class="check-box-label">
+                        <input type="checkbox" name="Eating Lugaw" value="working"> <span>Eating Lugaw</span>
+                    </label>
+                    <label class="check-box-label">
+                        <input type="checkbox" name="Two Jointing" value="working"> <span>Two Jointing</span>
+                    </label>
+                    <label class="check-box-label">
+                        <input type="checkbox" name="Arguing" value="working"> <span>Arguing</span>
+                    </label>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <h2>Any comments or suggestions?</h2>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+            </div>
+
+            <button class = "submit" id="submit">Submit</button>
+        </form>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>
